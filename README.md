@@ -12,7 +12,7 @@ The algorithm is written using [JAX](https://github.com/jax-ml/jax) and [QDax](h
 
 We found this apporach is able to achieve **significant diversity of dungeon structure and gameplay whilst ensuring the dungeons are playable**. Additionally, this approach is **highly modular** and can be easily adjusted and improved by changing the scoring functions in the archives or introducing additional archives to sample from.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=B5pj8V-GZlIe" allowfullscreen></iframe>
+[Demo Video](https://www.youtube.com/watch?v=B5pj8V-GZlIe)
 
 ## Improvements / Future Work:
 
