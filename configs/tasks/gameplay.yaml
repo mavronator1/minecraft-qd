@@ -1,0 +1,23 @@
+name: gameplay
+
+
+grid_shape: [50, 50]
+bd_min: [0.0, 0.0]
+bd_max: [1.0, 1.0]
+
+
+genotype_setup:
+
+  window_size: 3
+  num_features: 3
+  layer_sizes: [64,64]
+  iso_sigma:  0.005
+  line_sigma: 0.05
+  input_middle: true
+
+scoring_fn: 'nds'
+scoring_fn_args:
+
+  target_zero_rate: 0.8
+  target_zero_tolerance: 0.1
+  priority_weight: 1

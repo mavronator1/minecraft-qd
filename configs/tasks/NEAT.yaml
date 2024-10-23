@@ -1,0 +1,14 @@
+name: fitnesses
+
+functions:
+  - name: "accuracy" 
+    w: 1
+    parameters:
+      accuracy_w: 1
+      inaccuracy_w: 2
+      density_target: 0.4
+      density_w: 1
+  - name: "frequency"
+    w: 1
+    parameters:
+      targets: [3, 5, 1]

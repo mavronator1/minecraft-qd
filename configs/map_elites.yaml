@@ -1,0 +1,15 @@
+name: map_elites 
+
+defaults: 
+  - hydra: default # load default hydra settings
+  - wandb: flat # load gameplay wandb settings
+  - tasks: flat # load task settings
+
+seed: 2905
+batch_size: 1024
+num_iterations: 50000
+log_period: 50
+img_period: 10
+save_period: 10
+variation_p: 1.0
+results_dir: "flat"

@@ -1,0 +1,4 @@
+project: minecraft-hbr
+job_type: train
+name: H ${now:%Y_%m_%d_%H_%M_%S}
+mode: online

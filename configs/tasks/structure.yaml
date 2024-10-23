@@ -1,0 +1,25 @@
+name: structure
+
+grid_shape: [5, 5, 5, 5, 5, 5]
+bd_min: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+bd_max: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+scoring_fn: 'custom'
+scoring_fn_args: 
+
+  min_size: 15
+  min_distance: 8
+  min_chambers: 3
+
+genotype_setup:
+
+  structure_size: 20
+  max_chambers: 5
+  max_connections: 20
+  expansion_threshold: 0.5
+  expansion_perimeter: 1
+
+  mutation_chamber_p: 0.5
+  mutation_add_chamber_p: 0.2
+  mutation_connection_p: 0.2
+  cross_over_p : 0.2

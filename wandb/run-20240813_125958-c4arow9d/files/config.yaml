@@ -1,0 +1,122 @@
+wandb_version: 1
+
+wandb:
+  desc: null
+  value:
+    project: minecraft-hbr
+    job_type: train
+    name: H 2024_08_13_12_59_57
+    mode: online
+tasks:
+  desc: null
+  value:
+    name: gameplay
+    grid_shape:
+    - 3
+    - 5
+    - 5
+    - 5
+    - 5
+    bd_min:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    bd_max:
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    genotype_setup:
+      s_mutation:
+      - 0.2
+      - 0.2
+      - 0.2
+      - 0.2
+      - 0.2
+      s_mutation_mu:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      s_mutation_sigma:
+      - 0.5
+      - 0.5
+      - 0.5
+      - 0.5
+      - 0.5
+      g_mutation:
+      - 0.1
+      - 0.1
+      - 0.1
+      g_mutation_mu:
+      - 0
+      - 0
+      - 0
+      g_mutation_sigma:
+      - 0.5
+      - 0.5
+      - 0.5
+    scoring_fn: basic
+    scoring_fn_args:
+      max_difficulty: 3
+name:
+  desc: null
+  value: map_elites
+seed:
+  desc: null
+  value: 1
+batch_size:
+  desc: null
+  value: 10
+num_iterations:
+  desc: null
+  value: 5000
+log_period:
+  desc: null
+  value: 20
+variation_p:
+  desc: null
+  value: 0.0
+results_dir:
+  desc: null
+  value: results
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.17.6
+    framework: sklearn
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1723553998
+    t:
+      1:
+      - 5
+      - 12
+      - 45
+      - 49
+      - 50
+      - 53
+      - 55
+      2:
+      - 5
+      - 12
+      - 45
+      - 49
+      - 50
+      - 53
+      - 55
+      3:
+      - 2
+      - 13
+      - 16
+      - 23
+      4: 3.10.12
+      5: 0.17.6
+      8:
+      - 5
+      13: linux-x86_64

@@ -1,0 +1,34 @@
+2024-08-13 12:59:58,497 INFO    MainThread:1372 [wandb_setup.py:_flush():76] Current SDK version is 0.17.6
+2024-08-13 12:59:58,497 INFO    MainThread:1372 [wandb_setup.py:_flush():76] Configure stats pid to 1372
+2024-08-13 12:59:58,497 INFO    MainThread:1372 [wandb_setup.py:_flush():76] Loading settings from /tmp/.config/wandb/settings
+2024-08-13 12:59:58,497 INFO    MainThread:1372 [wandb_setup.py:_flush():76] Loading settings from /workspace/src/wandb/settings
+2024-08-13 12:59:58,497 INFO    MainThread:1372 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-08-13 12:59:58,497 INFO    MainThread:1372 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-08-13 12:59:58,497 INFO    MainThread:1372 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run_me.py', 'program_abspath': '/workspace/src/run_me.py', 'program': '/workspace/src/run_me.py'}
+2024-08-13 12:59:58,497 INFO    MainThread:1372 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-08-13 12:59:58,498 INFO    MainThread:1372 [wandb_init.py:_log_setup():521] Logging user logs to /workspace/src/wandb/run-20240813_125958-c4arow9d/logs/debug.log
+2024-08-13 12:59:58,498 INFO    MainThread:1372 [wandb_init.py:_log_setup():522] Logging internal logs to /workspace/src/wandb/run-20240813_125958-c4arow9d/logs/debug-internal.log
+2024-08-13 12:59:58,498 INFO    MainThread:1372 [wandb_init.py:init():559] calling init triggers
+2024-08-13 12:59:58,498 INFO    MainThread:1372 [wandb_init.py:init():566] wandb.init called with sweep_config: {}
+config: {'wandb': {'project': 'minecraft-hbr', 'job_type': 'train', 'name': 'H 2024_08_13_12_59_57', 'mode': 'online'}, 'tasks': {'name': 'gameplay', 'grid_shape': [3, 5, 5, 5, 5], 'bd_min': [0.0, 0.0, 0.0, 0.0, 0.0], 'bd_max': [1.0, 1.0, 1.0, 1.0, 1.0], 'genotype_setup': {'s_mutation': [0.2, 0.2, 0.2, 0.2, 0.2], 's_mutation_mu': [0, 0, 0, 0, 0], 's_mutation_sigma': [0.5, 0.5, 0.5, 0.5, 0.5], 'g_mutation': [0.1, 0.1, 0.1], 'g_mutation_mu': [0, 0, 0], 'g_mutation_sigma': [0.5, 0.5, 0.5]}, 'scoring_fn': 'basic', 'scoring_fn_args': {'max_difficulty': 3}}, 'name': 'map_elites', 'seed': 1, 'batch_size': 10, 'num_iterations': 5000, 'log_period': 20, 'variation_p': 0.0, 'results_dir': 'results'}
+2024-08-13 12:59:58,498 INFO    MainThread:1372 [wandb_init.py:init():609] starting backend
+2024-08-13 12:59:58,498 INFO    MainThread:1372 [wandb_init.py:init():613] setting up manager
+2024-08-13 12:59:58,500 INFO    MainThread:1372 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-08-13 12:59:58,502 INFO    MainThread:1372 [wandb_init.py:init():621] backend started and connected
+2024-08-13 12:59:58,506 INFO    MainThread:1372 [wandb_init.py:init():716] updated telemetry
+2024-08-13 12:59:58,512 INFO    MainThread:1372 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2024-08-13 12:59:58,821 INFO    MainThread:1372 [wandb_run.py:_on_init():2438] communicating current version
+2024-08-13 12:59:58,861 INFO    MainThread:1372 [wandb_run.py:_on_init():2447] got version response 
+2024-08-13 12:59:58,861 INFO    MainThread:1372 [wandb_init.py:init():800] starting run threads in backend
+2024-08-13 12:59:59,202 INFO    MainThread:1372 [wandb_run.py:_console_start():2416] atexit reg
+2024-08-13 12:59:59,202 INFO    MainThread:1372 [wandb_run.py:_redirect():2258] redirect: wrap_raw
+2024-08-13 12:59:59,204 INFO    MainThread:1372 [wandb_run.py:_redirect():2323] Wrapping output streams.
+2024-08-13 12:59:59,205 INFO    MainThread:1372 [wandb_run.py:_redirect():2348] Redirects installed.
+2024-08-13 12:59:59,208 INFO    MainThread:1372 [wandb_init.py:init():843] run started, returning control to user process
+2024-08-13 13:00:04,262 INFO    MainThread:1372 [wandb_run.py:_finish():2110] finishing run mavro/minecraft-hbr/c4arow9d
+2024-08-13 13:00:04,263 INFO    MainThread:1372 [wandb_run.py:_atexit_cleanup():2377] got exitcode: 1
+2024-08-13 13:00:04,263 INFO    MainThread:1372 [wandb_run.py:_restore():2355] restore
+2024-08-13 13:00:04,263 INFO    MainThread:1372 [wandb_run.py:_restore():2361] restore done
+2024-08-13 13:00:10,563 INFO    MainThread:1372 [wandb_run.py:_footer_history_summary_info():4035] rendering history
+2024-08-13 13:00:10,564 INFO    MainThread:1372 [wandb_run.py:_footer_history_summary_info():4067] rendering summary
+2024-08-13 13:00:10,573 INFO    MainThread:1372 [wandb_run.py:_footer_sync_info():3994] logging synced files

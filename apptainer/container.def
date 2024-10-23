@@ -1,0 +1,56 @@
+Bootstrap: docker
+From: ubuntu:22.04
+
+%help
+	Apptainer definition file example to be used with `build_container.sh` and `shell_container.sh`. The only required steps to make the definition file compatible with the scripts are "Set up workspace" and "Clone repository to /src/" in the %post section.
+
+%labels
+	Author m.faldor22@imperial.ac.uk
+
+%environment
+	# System
+	export TZ=Europe/London
+
+	# Activate virtual environment permanently
+	export VIRTUAL_ENV='/venv'
+	export _OLD_VIRTUAL_PATH="$PATH"
+	export PATH="$VIRTUAL_ENV/bin:$PATH"
+
+	# Add /workspace/src/ to PYTHONPATH
+	export PYTHONPATH='/workspace/src'
+
+%post
+	export DEBIAN_FRONTEND=noninteractive
+
+	# Update and install required libraries
+	apt update
+	apt install -y unzip wget git software-properties-common
+	# JDK for Evocraft 
+	apt-get -y install openjdk-8-jre
+	# Install Python
+	add-apt-repository ppa:deadsnakes/ppa
+	apt install -y python3.10 python3.10-venv
+
+	# Create a virtual environment
+	python3.10 -m venv /venv
+	. /venv/bin/activate
+	python -m ensurepip
+	pip install --upgrade pip
+
+	# Set up workspace
+	mkdir /workspace/ && cd /workspace/
+
+	# Clone repository to /src/
+	git clone --recurse-submodules https://{{ gitlab_user }}:{{ gitlab_token }}@gitlab.doc.ic.ac.uk/AIRL/students_projects/2023-2024/george_mavroghenis/mc-hbr-tools src/ && cd src/
+	git checkout {{ commit }}
+
+	# Install requirements
+	pip install -r requirements.txt
+	# Install qdax (from repo) in editor mode
+	pip install -e QDax 
+	# Install src from repo
+	pip install -e .
+
+%runscript
+	# Run main
+	python /workspace/src/run_me.py "$@"

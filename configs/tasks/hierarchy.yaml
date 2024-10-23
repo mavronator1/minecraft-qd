@@ -1,0 +1,33 @@
+name: hierarchy
+
+
+grid_shape: [5, 5, 5, 5, 5]
+bd_min: [0.0, 0.0, 0.0, 0.0, 0.0]
+bd_max: [1.0, 1.0, 1.0, 1.0, 1.0]
+
+genotype_setup:
+
+    s_repertoire_path: "results/structure/FINAL/" # structure repertoire
+    s_config_path: "results/structure/long-02-09/structure.yaml" # structure genotype class
+
+    g_repertoire_path: "results/gameplay/final_normal/" # gameplay repertoire
+    g_config_path: 'configs/tasks/gameplay.yaml' 
+    
+    iso_sigma: 0.005
+    line_sigma: 0.05
+
+scoring_fn: 'max_path'
+
+scoring_fn_args:
+
+  fn_type: 'pw'
+  min_distance: 8
+  gameplay_range: [0.1, 0.3]
+
+  d_weight: 1
+  g_weight: 1
+  bonus_weight: 0.1
+
+  
+
+

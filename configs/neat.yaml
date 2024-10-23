@@ -1,0 +1,31 @@
+name: neat
+
+defaults: 
+  - hydra: default # load default hydra settings
+  - wandb: default # load default wandb settings
+  - tasks: neat_fitness
+ 
+# algorithm setup 
+seed: 123
+pop_size: 100
+species_size: 5
+survival_threshold: 0.01
+
+# genome setup
+
+num_inputs: 40
+num_outputs: 4
+max_connections: 200
+
+# problem setup
+
+n_tiles: 5
+window_size: 3
+n_levels: 10
+repertoire_path: "structure/demo_archive/"
+structure_path: "configs/tasks/structure.yaml"
+
+# pipeline setup
+generation_limit: 200
+fitness_target: 1e-6
+

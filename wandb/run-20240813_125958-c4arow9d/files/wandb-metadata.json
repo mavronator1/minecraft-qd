@@ -1,0 +1,88 @@
+{
+    "os": "Linux-6.5.0-45-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-08-13T12:59:58.945678",
+    "startedAt": "2024-08-13T12:59:58.495667",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/workspace/src/run_me.py",
+    "codePathLocal": "run_me.py",
+    "codePath": "run_me.py",
+    "git": {
+        "remote": "https://gitlab.doc.ic.ac.uk/AIRL/students_projects/2023-2024/george_mavroghenis/mc-hbr-tools.git",
+        "commit": "29123b958f1620790e3922fde3b92007c3abbccc"
+    },
+    "email": null,
+    "root": "/workspace/src",
+    "host": "gpu29.doc.ic.ac.uk",
+    "username": "grm23",
+    "executable": "/venv/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3460.386125,
+        "min": 1200.0,
+        "max": 3900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3400.002,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3400.004,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3572.997,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3400.014,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3399.998,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3400.009,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3570.706,
+            "min": 1200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3400.003,
+            "min": 1200.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 0.0625,
+            "used": 1.52587890625e-05
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 62.52680206298828
+    }
+}

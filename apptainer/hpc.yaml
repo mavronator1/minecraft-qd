@@ -1,0 +1,8 @@
+hpc: login.hpc.imperial.ac.uk
+
+job_name: Flat-MC
+walltime: 1:00:00
+resources: select=1:ncpus=4:mem=16gb:ngpus=1:gpu_type=RTX6000
+job_array: 1-5  # null
+kwargs: null  # -q express -P exp-00097
+njobs: 1
